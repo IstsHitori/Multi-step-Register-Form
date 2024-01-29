@@ -4,7 +4,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-h2,p,span,input,a{
+ul{
+    padding-left: 30px;
+    color: #E5E7EB;
+    margin-top: 10px;
+    li{
+        margin-bottom: 7px;
+    }
+}
+h2,p,span,input,div,h4,a{
     font-family: "Inter";
 }
 body{
@@ -15,6 +23,7 @@ button:hover{
     cursor: pointer;
 }
 
+
 .container{
     min-height: 100vh;
     display: flex;
@@ -22,12 +31,22 @@ button:hover{
     justify-content: center;
 
     .card-container{
+        min-width: 500px;
         .card{
             h2{
                 margin-bottom: 38px;
                 color: #E5E7EB;
                 font-weight: 600;
                 font-size: 20px;
+            }
+            h4{
+                font-size: 1em;
+                color: #A1A1A9;
+                margin-top: 1.5rem;
+            }
+            h3{
+                color: #E5E7EB;
+                margin-bottom: 25px;
             }
             p{
                 color:#A1A1A9;
@@ -73,6 +92,8 @@ button:hover{
                     }
                 }
             }
+
+      
         }
     }
 
@@ -107,6 +128,19 @@ button:hover{
             background-color: #845EEE;
         }
     }
+}
+.error{
+    color: black;
+    background-color: rgba(255, 152, 152, 0.986);
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 15px;
+    border: 1px solid red;
+    margin-top: 15px;
+    padding: 20px;
+    font-family: "Inter";
 }
 
 .first-ball{
@@ -154,4 +188,8 @@ button:hover{
     background-color: #652CD1;
     color: #E5E7EB;
 }
+.ocultar{
+    display: none;
+}
+
 /*# sourceMappingURL=style.scss.map */
